@@ -75,7 +75,7 @@ namespace SimpleCalculator
         {
             if (direction == ButtonDirection.Up)
             {
-                if (button == SimpleCalculator.Buttons.Top)
+                if (button == SimpleCalculator.Buttons.TopRight)
                 {
                     Debug.Print("Button press up");
                     for (int i = 0; i < Buttons.Count - 1; i++)
@@ -92,7 +92,7 @@ namespace SimpleCalculator
                     }
                     Render(Screen);
                 }
-                if (button == SimpleCalculator.Buttons.Bottom)
+                if (button == SimpleCalculator.Buttons.BottomRight)
                 {
                     Debug.Print("Button press down");
                     for (int i = Buttons.Count - 1; i >= 0; i--)
@@ -109,7 +109,7 @@ namespace SimpleCalculator
                     }
                     Render(Screen);
                 }
-                if (button == SimpleCalculator.Buttons.Middle)
+                if (button == SimpleCalculator.Buttons.MiddleRight)
                 {
                     Debug.Print("Button press select:" + SelectedButton.Text);
                     var text = SelectedButton.Text;
